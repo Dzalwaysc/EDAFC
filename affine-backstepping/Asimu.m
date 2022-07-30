@@ -28,7 +28,7 @@ for i=4:7
     Tao_back{i}(1,:) = zeros(1,3);
     
     [Eta_back{i}(1,:), Etad_back{i}(1,:), Etadd_back{i}(1,:), V_back{i}(1,:), C__{i}(1,:), D__{i}(1,:), M__{i}(1,:), F{i}(1,:)] = ...
-            platform([Eta{i}(1,:)'; V{i}(1,:)'], Tao{i}(1,:)', dt, 0); 
+            platform([Eta_back{i}(1,:)'; V_back{i}(1,:)'], Tao_back{i}(1,:)', dt, 0); 
 end
 
 %% simulation
